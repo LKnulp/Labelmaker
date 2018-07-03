@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<title>labelmaker</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<h1>Labelmaker</h1>
+		<p style="text-align: center;">Etiketten: Avery Zweckform, 3424-200, 105x48</p>
+		<form action="labelmakerNew.php" method="POST" enctype="multipart/form-data">
+
+			<div id="options">
+				<button id="activateMode1" class="option" type="button" onclick="activateMode('mode1')">Klassensatz drucken</button>
+				<button id="activateMode2" class="option" type="button" onclick="activateMode('mode2')">Labels f&uuml;r Schuber</button>
+				<button id="activateMode3" class="option" type="button" onclick="activateMode('mode3')">Labels nachdrucken</button>
+			</div>
+			
+			<div id="basics">
+				<input class="update" type="text" name="title" placeholder="Titel" required>
+				<input class="update" type="text" name="class" placeholder="Klasse" required>
+				<input class="update" type="text" name="subject" placeholder="Fach" required>
+				<input class="update" type="text" name="date" placeholder="Anschaffungsdatum (dd.mm.yyy)" required>
+				<input type="file" id="imgInp" name="logo">
+			</div>
+			
+			<hr>
+			
+			<!-- print classsets  -->
+			<div id="mode1" class="header"> 
+				<label for="startInt">Fortlaufende Nummern beginnen bei</label>
+				<input type="number" id="startInt" name="startInt" >
+				<label for="itemCount">Gesamtanzahl</label>
+				<input id="itemCount" type="number" name="itemCount" >
+			</div>
+
+			<!-- print container -->
+			<div id="mode2" class="header">
+			<label for="containerCount">Anzahl an Schubern im Klassensatz (selber Inhalt)</label>
+				<input id="containerCount" count="0" type="hidden" name="containerCount" function="createGroupInput" readonly>
+			</div>
+
+			<!-- reprint -->
+			<div id="mode3" class="header">
+				<input id="replicator" type="text" placeholder="Anzahl Nachdrucke (ohne Nummerierung)" name="replications">
+			</div>			
+
+			<hr>
+			
+			<input id="debugFrame" type="checkbox" name="debugFrame">
+			<label id="debugFrameLabel" for="debugFrame">Rahmen drucken um Ausrichtung zu pr&uuml;fen? <span class="hint" id="hintFrame"></span></label>
+			
+<!--
+			<input type="number" name="labelWidth" placeholder="Breite eines Labels">
+			<input type="number" name="labelHeight" placeholder="Höhe eines Labels">
+			<input type="number" name="sheetCount" placeholder="Labels pro Bogen">
+			<input type="number" name="sheetMarginTop" placeholder="Seitenrand zum Label oben">
+			<input type="number" name="sheetMarginLeft" placeholder="Seitenrand zum Label links">
+			<input type="number" name="labelMarginVer" placeholder="Abstand zwischen den Labels oben/ unten (nur ein Wert)">
+			<input type="number" name="labelMarginHor" placeholder="Abstand zwischen den Labels rechts/ links (nur ein Wert)">
+-->
+			<input id="mode" name="mode" type="hidden">
+			<input id="disclaimerField" name="disclaimer" type="hidden">
+			<input type="submit">
+		</form>
+		<div id="label">
+			<div class="value" id="title">Titel: <span class="val"></span></div>
+			<div class="value" id="class">Klasse: <span class="val"></span></div>
+			<div class="value" id="subject">Fach: <span class="val"></span></div>
+			<div class="value" id="date">Anschaffungsdatum: <br /><span class="val"></span></div>
+			
+			<div class="value" id="number">#</div>
+			
+			<img id="logo" src="" alt="">
+			<p id="disclaimer">
+			Dieses Schulbuch wurde in das Inventar aufgenommen und soll mehrere Jahre verwendet werden k&ouml;nnen. Darum d&uuml;rfen keine Eintr&auml;ge, Unterstreichungen oder Markierungen vorgenommen werden. Zum Schutz des Buches soll es in einem Umschlag eingeschlagen werden.
+			</p>
+		</div>
+	</body>
+	<footer>
+		<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	</footer>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/maincontrol.js"></script>
+</html>
