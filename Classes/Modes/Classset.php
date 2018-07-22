@@ -7,7 +7,7 @@ class Classset extends LabelSet implements LabelmakerInterface
 {
 	public function __construct($pageSettings) {
 		parent::__construct($pageSettings);
-		$this->init(new Request());		
+		$this->init($GLOBALS['request']);
 		$this->setValidationRules();
 		$this->setValidator();
 		$this->calculateLabelcount();

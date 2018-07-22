@@ -161,9 +161,9 @@ LM(document).ready(function() {
 	});
 	
 	//TESTING
-//	LM('input[name=title]').val('Einstern');
-//	LM('input[name=class]').val('3a');
-//	LM('input[name=subject]').val('Mathe');
-//	LM('input[name=date]').val('20.08.2016');
+	LM('input[name=title]').val('Einstern');
+	LM('input[name=class]').val('3a');
+	LM('input[name=subject]').val('Mathe');
+	LM('input[name=date]').val('20.08.2016');
 
 });

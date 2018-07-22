@@ -8,6 +8,7 @@ class Label extends DefaultLabel
 	private $subject;
 	private $class;
 	private $date;
+	private $logo;
 	
 	function __construct($request) {
 		parent::__construct();
@@ -15,6 +16,9 @@ class Label extends DefaultLabel
 		$this->subject	= $request->subject;
 		$this->class 	= $request->class;
 		$this->date 	= $request->date;
+		if($request->hasLogo()) {
+			$this->imgPath = $request->getLogo();
+		}
 	}
 	
 	function getTitle() {
