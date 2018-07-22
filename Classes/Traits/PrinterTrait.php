@@ -95,7 +95,7 @@ trait PrinterTrait
 	
 		//image
 		$this->SetXY($x+$this->label->getLabelWidth()/2-2, $y);
-		$this->Image(__DIR__.'/../../img/lbs_logo.png', $this->GetX(),$this->GetY(),$this->label->getLabelWidth()/2-2,0,'PNG');
+		$this->Image($this->label->getImgPath(), $this->GetX(),$this->GetY(),$this->label->getLabelWidth()/2-2,0);
 		
 		//check format with frame
 		if($this->request->debugFrame == 'on') {

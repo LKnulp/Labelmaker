@@ -3,7 +3,7 @@
 require_once('./Classes/Request.php');
 require_once('./Classes/Page/Page.php');
 
-$request = new Request();
+$GLOBALS['request'] = new Request();
 $page = new Page();
 
 switch ($request->getMode())
@@ -60,7 +60,9 @@ foreach($LabelSet->getContainers() as $id) {
 	}
 }
 
-	$LabelSet->Output();
+$request->clearTemp();
+$LabelSet->Output();
+
 
 function printErrors($errors) {
 	foreach($errors as $field => $error) {
