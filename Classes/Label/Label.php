@@ -16,6 +16,7 @@ class Label extends DefaultLabel
 		$this->subject	= $request->subject;
 		$this->class 	= $request->class;
 		$this->date 	= $request->date;
+
 		if($request->hasLogo()) {
 			$this->imgPath = $request->getLogo();
 		}

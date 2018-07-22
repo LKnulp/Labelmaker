@@ -18,7 +18,11 @@ class defaultLabel
 		$this->labelHeight		= 48;
 		$this->labelMarginVert	= 0;
 		$this->labelMarginHor	= 0;
+<<<<<<< HEAD
 		$this->imgPath			= '/var/www/html/labelmaker/img/white.png';
+=======
+		$this->imgPath			= __DIR__.'/../../img/white.png';
+>>>>>>> 5e1ae81... bugfix setting default img
 		$this->disclaimer		= 'Dieses Schulbuch wurde in das Inventar aufgenommen und soll mehrere Jahre verwendet werden können. Darum dürfen keine Einträge, Unterstreichungen oder Markierungen vorgenommen werden. Zum Schutz des Buches soll es in einem Umschlag eingeschlagen werden.';
 	}
 

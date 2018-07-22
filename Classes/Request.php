@@ -66,7 +66,7 @@ class Request
 	private function setMode() {
 		$this->mode = substr($this->mode, -1);
 	}
-
+	
 	/**
 	* Grab file from upload
 	*/
@@ -83,5 +83,4 @@ class Request
 
 		echo "Fehler beim Hochladen des Logos!\n";
 	}
-
 }

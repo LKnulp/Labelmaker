@@ -165,6 +165,30 @@ LM(document).ready(function() {
 	});
 	
 	//TESTING
+<<<<<<< HEAD
+<<<<<<< HEAD
+	if(findGetParameter('debug') == 1) {
+		LM('input[name=title]').val('Einstern');
+		LM('input[name=class]').val('3a');
+		LM('input[name=subject]').val('Mathe');
+		LM('input[name=date]').val('20.08.2016');
+	}
+});
+
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+}
+=======
+	console.log(findGetParameter('debug'));
+=======
+>>>>>>> 04abf4d... removed debugging-info
 	if(findGetParameter('debug') == 1) {
 		LM('input[name=title]').val('Einstern');
 		LM('input[name=class]').val('3a');
@@ -184,3 +208,4 @@ function findGetParameter(parameterName) {
     }
     return result;
 }
+>>>>>>> 5d56902... debug-mode added

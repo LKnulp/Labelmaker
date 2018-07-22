@@ -7,6 +7,7 @@ class Container extends LabelSet implements LabelmakerInterface
 {
 	function __construct($pageSettings) {
 		parent::__construct($pageSettings);
+
 		$this->init($GLOBALS['request']);
 		$this->setValidationRules();
 		$this->setValidator();
