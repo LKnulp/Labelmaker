@@ -102,6 +102,10 @@ function activateMode(mode) {
 	LM('.header').each(function() {
 		LM(this).hide();
 	});
+	LM('button.option').each(function() {
+		LM(this).removeClass('active');
+	});
+	LM('button.'+mode).addClass('active');
 	LM('#mode').val(mode);
 	LM('#'+mode).show();
 	LM('input[name=mode]').val(mode);
@@ -161,9 +165,9 @@ LM(document).ready(function() {
 	});
 	
 	//TESTING
-	LM('input[name=title]').val('Einstern');
-	LM('input[name=class]').val('3a');
-	LM('input[name=subject]').val('Mathe');
-	LM('input[name=date]').val('20.08.2016');
+//	LM('input[name=title]').val('Einstern');
+//	LM('input[name=class]').val('3a');
+//	LM('input[name=subject]').val('Mathe');
+//	LM('input[name=date]').val('20.08.2016');
 
 });

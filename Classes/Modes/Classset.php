@@ -27,6 +27,6 @@ class Classset extends LabelSet implements LabelmakerInterface
 	}
 	
 	private function calculateLabelcount() {
-		$this->labelCount = $this->request->itemCount - $this->request->startInt +1;
+		$this->labelCount = $this->request->itemCount + $this->request->startInt -1;
 	}
 }
