@@ -27,7 +27,11 @@ class Request
 			$this->setFile();
 		}
 	}
-	public function clearTemp() {
+
+	/**
+	* delete uploaded images if the object is destroyed
+	*/
+	function __destruct() {
 		unlink($this->uploadfile);
 	}
 

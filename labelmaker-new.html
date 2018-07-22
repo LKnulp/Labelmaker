@@ -8,12 +8,12 @@
 	<body>
 		<h1>Labelmaker</h1>
 		<p style="text-align: center;">Etiketten: Avery Zweckform, 3424-200, 105x48</p>
-		<form action="labelmakerNew.php" method="POST" enctype="multipart/form-data">
+			<form action="labelmakerNew.php" method="POST" enctype="multipart/form-data">
 
 			<div id="options">
-				<button id="activateMode1" class="option" type="button" onclick="activateMode('mode1')">Klassensatz drucken</button>
-				<button id="activateMode2" class="option" type="button" onclick="activateMode('mode2')">Labels f&uuml;r Schuber</button>
-				<button id="activateMode3" class="option" type="button" onclick="activateMode('mode3')">Labels nachdrucken</button>
+				<button id="activateMode1" class="option mode1" type="button" onclick="activateMode('mode1')">Klassensatz drucken</button>
+				<button id="activateMode2" class="option mode2" type="button" onclick="activateMode('mode2')">Labels f&uuml;r Schuber</button>
+				<button id="activateMode3" class="option mode3" type="button" onclick="activateMode('mode3')">Labels nachdrucken</button>
 			</div>
 			
 			<div id="basics">
@@ -30,7 +30,7 @@
 			<div id="mode1" class="header"> 
 				<label for="startInt">Fortlaufende Nummern beginnen bei</label>
 				<input type="number" id="startInt" name="startInt" >
-				<label for="itemCount">Gesamtanzahl</label>
+				<label for="itemCount">Anzahl neuer Exemplare</label>
 				<input id="itemCount" type="number" name="itemCount" >
 			</div>
 

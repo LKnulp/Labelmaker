@@ -5,7 +5,10 @@ require_once('./Classes/Page/Page.php');
 
 $GLOBALS['request'] = new Request();
 $page = new Page();
-
+//print("<pre>");
+//print_r($GLOBALS['request']);
+//print("</pre>");
+//die();
 switch ($request->getMode())
 {
 	case '1':
@@ -60,9 +63,7 @@ foreach($LabelSet->getContainers() as $id) {
 	}
 }
 
-$request->clearTemp();
 $LabelSet->Output();
-
 
 function printErrors($errors) {
 	foreach($errors as $field => $error) {
