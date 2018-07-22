@@ -165,7 +165,6 @@ LM(document).ready(function() {
 	});
 	
 	//TESTING
-	console.log(findGetParameter('debug'));
 	if(findGetParameter('debug') == 1) {
 		LM('input[name=title]').val('Einstern');
 		LM('input[name=class]').val('3a');

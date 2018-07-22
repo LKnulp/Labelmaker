@@ -5,10 +5,7 @@ require_once('./Classes/Page/Page.php');
 
 $GLOBALS['request'] = new Request();
 $page = new Page();
-//print("<pre>");
-//print_r($GLOBALS['request']);
-//print("</pre>");
-//die();
+
 switch ($request->getMode())
 {
 	case '1':
