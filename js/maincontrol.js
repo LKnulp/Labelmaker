@@ -165,9 +165,23 @@ LM(document).ready(function() {
 	});
 	
 	//TESTING
-//	LM('input[name=title]').val('Einstern');
-//	LM('input[name=class]').val('3a');
-//	LM('input[name=subject]').val('Mathe');
-//	LM('input[name=date]').val('20.08.2016');
+	console.log(findGetParameter('debug'));
+	if(findGetParameter('debug') == 1) {
+		LM('input[name=title]').val('Einstern');
+		LM('input[name=class]').val('3a');
+		LM('input[name=subject]').val('Mathe');
+		LM('input[name=date]').val('20.08.2016');
+	}
 
 });
+
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+}
