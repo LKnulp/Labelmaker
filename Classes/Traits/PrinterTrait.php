@@ -95,11 +95,7 @@ trait PrinterTrait
 	
 		//image
 		$this->SetXY($x+$this->label->getLabelWidth()/2-2, $y);
-<<<<<<< HEAD
 		$this->Image($this->label->getImgPath(), $this->GetX(),$this->GetY(),$this->label->getLabelWidth()/2-2,0);
-=======
-		$this->Image($this->label->getImgPath(), $this->GetX(),$this->GetY(),$this->label->getLabelWidth()/2-2,0);
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 		
 		//check format with frame
 		if($this->request->debugFrame == 'on') {
@@ -108,8 +104,4 @@ trait PrinterTrait
 		
 		$this->SetXY($x+$this->label->getLabelWidth(), $y);
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0

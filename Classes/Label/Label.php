@@ -8,11 +8,7 @@ class Label extends DefaultLabel
 	private $subject;
 	private $class;
 	private $date;
-<<<<<<< HEAD
 	private $logo;
-=======
-	private $logo;
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 	
 	function __construct($request) {
 		parent::__construct();
@@ -20,16 +16,10 @@ class Label extends DefaultLabel
 		$this->subject	= $request->subject;
 		$this->class 	= $request->class;
 		$this->date 	= $request->date;
-<<<<<<< HEAD
 
 		if($request->hasLogo()) {
 			$this->imgPath = $request->getLogo();
 		}
-=======
-		if($request->hasLogo()) {
-			$this->imgPath = $request->getLogo();
-		}
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 	}
 	
 	function getTitle() {
@@ -47,8 +37,4 @@ class Label extends DefaultLabel
 	function getDate() {
 		return $this->date;
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0

@@ -42,13 +42,8 @@ div.group {
 input.required {
 	border: 1px solid;
 	outline: none;
-<<<<<<< HEAD
     border-color: orangered;
     box-shadow: 0 0 10px orangered;
-=======
-    border-color: orangered;
-    box-shadow: 0 0 10px orangered;
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 }
 #options {
 	position: absolute;
@@ -59,28 +54,16 @@ input.required {
 button.option {
 	height: 60px;
 	padding: 15px 5px;
-<<<<<<< HEAD
     border-style: solid;
 	border-width: 3px;
 	border-color: #444;
-=======
-    border-style: solid;
-	border-width: 3px;
-	border-color: #444;
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
     background-color: #444;
     color: #fff;
     cursor: pointer;
 }
-<<<<<<< HEAD
 button.option.active {
 	background-color: orangered;
 }
-=======
-button.option.active {
-	background-color: orangered;
-}
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 
 /*****************
 *	TOOLTIPS 	 *
@@ -113,11 +96,7 @@ p.toolTip.active {
 #label {
 	border: 1px solid black;
 	position: absolute;
-<<<<<<< HEAD
 	display: inline;
-=======
-	display: inline;
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 	margin-left: 10%;
 	width: 387px;
 	height: 176px;
@@ -127,11 +106,7 @@ p.toolTip.active {
 	font-size: 7pt;
 	position: absolute;
 	right: 0;
-<<<<<<< HEAD
 	width: 45%;
-=======
-	width: 45%;
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 	text-align: center;
 	bottom: 0;
 	padding: 5px;
@@ -158,8 +133,4 @@ p.toolTip.active {
 .value#number {
 	font-size: 23pt;
 	bottom: 0;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
