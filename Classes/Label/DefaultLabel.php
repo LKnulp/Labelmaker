@@ -19,10 +19,14 @@ class defaultLabel
 		$this->labelMarginVert	= 0;
 		$this->labelMarginHor	= 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$this->imgPath			= '/var/www/html/labelmaker/img/white.png';
 =======
 		$this->imgPath			= __DIR__.'/../../img/white.png';
 >>>>>>> 5e1ae81... bugfix setting default img
+=======
+		$this->imgPath			= __DIR__.'/../../img/white.png';
+>>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 		$this->disclaimer		= 'Dieses Schulbuch wurde in das Inventar aufgenommen und soll mehrere Jahre verwendet werden können. Darum dürfen keine Einträge, Unterstreichungen oder Markierungen vorgenommen werden. Zum Schutz des Buches soll es in einem Umschlag eingeschlagen werden.';
 	}
 
@@ -53,4 +57,8 @@ class defaultLabel
 	public function getDisclaimer() {
 		return $this->disclaimer;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 46676496da67c63965c20e8c925477892f50ecb0

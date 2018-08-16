@@ -102,10 +102,17 @@ function activateMode(mode) {
 	LM('.header').each(function() {
 		LM(this).hide();
 	});
+<<<<<<< HEAD
 	LM('button.option').each(function() {
 		LM(this).removeClass('active');
 	});
 	LM('button.'+mode).addClass('active');
+=======
+	LM('button.option').each(function() {
+		LM(this).removeClass('active');
+	});
+	LM('button.'+mode).addClass('active');
+>>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 	LM('#mode').val(mode);
 	LM('#'+mode).show();
 	LM('input[name=mode]').val(mode);
@@ -167,6 +174,7 @@ LM(document).ready(function() {
 	//TESTING
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if(findGetParameter('debug') == 1) {
 		LM('input[name=title]').val('Einstern');
 		LM('input[name=class]').val('3a');
@@ -189,6 +197,8 @@ function findGetParameter(parameterName) {
 	console.log(findGetParameter('debug'));
 =======
 >>>>>>> 04abf4d... removed debugging-info
+=======
+>>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 	if(findGetParameter('debug') == 1) {
 		LM('input[name=title]').val('Einstern');
 		LM('input[name=class]').val('3a');
@@ -208,4 +218,7 @@ function findGetParameter(parameterName) {
     }
     return result;
 }
+<<<<<<< HEAD
 >>>>>>> 5d56902... debug-mode added
+=======
+>>>>>>> 46676496da67c63965c20e8c925477892f50ecb0

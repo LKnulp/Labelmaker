@@ -7,8 +7,12 @@ class Replication extends LabelSet implements LabelmakerInterface
 {
 	function __construct($pageSettings) {
 		parent::__construct($pageSettings);
+<<<<<<< HEAD
 
 		$this->init($GLOBALS['request']);
+=======
+		$this->init($GLOBALS['request']);
+>>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
 		$this->setValidationRules();
 		$this->setValidator();		
 		$this->calculateLabelcount();
@@ -29,4 +33,9 @@ class Replication extends LabelSet implements LabelmakerInterface
 	private function calculateLabelcount() {
 		$this->labelCount = $this->request->replications;
 	}
+<<<<<<< HEAD
 }
+=======
+	
+}
+>>>>>>> 46676496da67c63965c20e8c925477892f50ecb0
